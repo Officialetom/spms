@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="chart-container" style="width: 90%; margin: auto;">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        var labels = ['0hrs','4hrs', '8hrs', '12hrs', '16hrs', '20hrs', '24hrs'];
+        var values = [0, 15, 16, 27, 18, 21, 20];
+        // var values2 = [0, 11, 20, 37];
+        // var values3 = [0, 6, 31, 19];
+        // var values4 = [0, 19, 19, 29];
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Blood Glucose',
+                    data: values,
+                    backgroundColor: 'rgba(34, 10, 122, 0.2)',
+                    borderColor: 'rgba(34, 10, 122, 1)',
+                    borderWidth: 1,
+                },
+                
+            ]
+
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Daily Chart'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

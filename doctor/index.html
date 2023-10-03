@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor - Dashboard</title>
+    <link rel="stylesheet" href="./nurse.css">
+</head>
+<body>
+    <!-- navbar section starts here -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand-name">
+                <i class="toggle_btn" id="toggle_btn">
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </i>
+                <a href="./" class="gone">STROKE PATIENT MONITORING SYSTEM</a>
+            </div>
+            <nav class="nav-link">
+                <span id="user"><img src="../images/user_icon.png" alt=""> Hello, Ubana<img src="../images/arrow_down.png" class="rotate" id="arrow_down" alt=""></span>
+                <div class="log-links" id="log_links">
+                    <a href="#">Reset Password</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- main content for html animation -->
+    <div class="main-content">
+        <div class="dashboard">
+            <div class="dashboard-item" id="dashboard-item">
+                <div class="dash-section">
+                    <img src="../images/favicon.png" alt="medicine_logo">
+                    <p>DOCTOR DASHBOARD</p>
+                </div>
+                <div class="dash-section">
+                    <ul>
+                        <li><a href="#"><img src="../images/dashboard.png" alt="">Dashboard</a></li>
+                        <li class="dash-inner" id="dash-inner"><span id="patient"><img src="../images/patient.png" alt="">Patients</span>
+                            <ul>
+                                <!-- <li><a href="./addPatient/"><img src="../images/patient add.png" alt="">Add Patients</a></li> -->
+                                <li><a href="#"><img src="../images/medical-chechup.png" alt="">View Patients</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="close_btn" id="close_btn">Close</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard-item-second">
+                <div class="dash-notification">
+                    <h5>Notification: <span>4</span></h5>
+                </div>
+                <div class="dash-container">
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>Total patients</h4>
+                            <img src="../images/advice.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>Doctor's Response</h4>
+                            <img src="../images/doctor.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>High Temperature Patients</h4>
+                            <img src="../images/fever.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>High Blood Pressure Patients</h4>
+                            <img src="../images/blood-pressure.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>Adult patients</h4>
+                            <img src="../images/man.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <div class="dash-box">
+                        <div class="box">
+                            <h4>Young patients</h4>
+                            <img src="../images/teenage.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h6>Copyright &copy;, SPMS </h6>
+    </footer>
+    <script src="./nurse.js"></script>
+</body>
+</html>

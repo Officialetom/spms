@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./login.css">
+    <script src="../OwlCarousel2-2.3.4/dist/jquery.min.js"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <title>SPMS - Login</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand-name">
+                <a href="../"><img src="../images/favicon.png" alt="medicine_logo"></a>
+                <a href="../" class="gone">STROKE PATIENT MONITORING SYSTEM</a>
+            </div>
+            <nav class="nav-link">
+                <a href="../register/">Register</a>
+            </nav>
+        </div>
+    </div>
+    <!-- main-content for html animations -->
+    <div class="main-content">
+        <!-- banner section -->
+        <div class="register">
+            <div class="register-container">
+                <div class="register-item-form">
+                    <div class="btn-up">
+                        <div class="btn-active" id="button-left">
+                            <h5>Nurse</h5>
+                        </div>
+                        <div class="btn-other hidden" id="button-right">
+                            <h5>Doctor</h5>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="owl-carousel owl-theme">
+                            <div class="form-control">
+                                <h3>Nurse Login</h3>
+                                <form action="">
+                                    <input type="email" name="email_nurse" placeholder="Email" required>
+                                    <input type="password" name="password_nurse" placeholder="Password" required>
+                                    <button type="submit" name="login_nurse">Login</button>
+                                </form>
+                                <a href="../register/">Don't have an account?</a>
+                            </div>
+                            <div class="form-control">
+                                <h3>Doctor Login</h3>
+                                <form action="">
+                                    <input type="text" name="email_doctor" placeholder="Email">
+                                    <input type="password" name="password_doctors" placeholder="Password">
+                                    <button type="submit" name="login_doctor">Login</button>
+                                </form>
+                                <a href="../register/">Don't have an account?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <h6>Copyright &copy;, SPMS </h6>
+    </footer>
+    <script>
+        $(document).ready(function() {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            items: 1,
+            dots:false,
+            margin: 20,
+          });
+
+        BtnLeft = document.getElementById('button-left');
+        BtnRight = document.getElementById('button-right');
+
+        BtnLeft.addEventListener('click', ()=>{
+            owl.trigger('prev.owl');
+            if(BtnLeft.classList.contains('hidden'))
+            {
+                BtnLeft.classList.remove('hidden');
+                BtnRight.classList.add('hidden');
+            }
+
+        })
+
+        BtnRight.addEventListener('click', ()=>{
+            owl.trigger('next.owl');
+            if(BtnRight.classList.contains('hidden'))
+            {
+                BtnRight.classList.remove('hidden');
+                BtnLeft.classList.add('hidden');
+            }
+        })
+        })
+      </script>
+    <script src="../OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js"></script>
+    <script src="../OwlCarousel2-2.3.4/docs/assets/js/app.js"></script>
+</body>
+</html>

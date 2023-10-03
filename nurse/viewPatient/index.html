@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse - View</title>
+    <link rel="stylesheet" href="./nurse.css">
+</head>
+<style>
+    .table-container
+    {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table
+    {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td
+    {
+        border: 1px solid #3a3a3a;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+<body>
+    <!-- navbar section starts here -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand-name">
+                <i class="toggle_btn" id="toggle_btn">
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </i>
+                <a href="../" class="gone">STROKE PATIENT MONITORING SYSTEM</a>
+            </div>
+            <nav class="nav-link">
+                <span id="user"><img src="../../images/user_icon.png" alt=""> Hello, Ubana<img src="../../images/arrow_down.png" class="rotate" id="arrow_down" alt=""></span>
+                <div class="log-links" id="log_links">
+                    <a href="#">Reset Password</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- main content for html animation -->
+    <div class="main-content">
+        <div class="dashboard">
+            <div class="dashboard-item" id="dashboard-item">
+                <div class="dash-section">
+                    <img src="../../images/favicon.png" alt="medicine_logo">
+                    <p>NURSE DASHBOARD</p>
+                </div>
+                <div class="dash-section">
+                    <ul>
+                        <li><a href="../"><img src="../../images/dashboard.png" alt="">Dashboard</a></li>
+                        <li class="dash-inner" id="dash-inner"><span id="patient"><img src="../../images/patient.png" alt="">Patients</span>
+                            <ul>
+                                <li><a href="../addPatient/"><img src="../../images/patient add.png" alt="">Add Patients</a></li>
+                                <li><a href="./"><img src="../../images/medical-chechup.png" alt="">View Patients</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="close_btn" id="close_btn">Close</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard-item-second">
+                <div class="dash-notification">
+                    <h5>Notification: <span>4</span></h5>
+                </div>
+                <div class="dash-container">
+                    <div class="dash-box">
+                        <h4>Add Patient <img src="../../images/patient add.png" alt=""></h4>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Sex</th>
+                                        <th>Age</th>
+                                        <th>Blood Group</th>
+                                        <th>Task</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Testing</td>
+                                        <td>M</td>
+                                        <td>59</td>
+                                        <td>O+</td>
+                                        <td class="task">
+                                            <a href="#">Record Vitals</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">View</a>
+                                            <span class="message">1 <img src="../../images/message.png" alt="message_icon"></span>
+                                            <span class="normal">Normal</span>
+                                            <span class="check">Check</span>
+                                            <form action="" class="form_delete">
+                                                <input type="text" value="1" hidden>
+                                                <button type="submit"><img src="../../images/delete.png" alt=""></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Testing</td>
+                                        <td>M</td>
+                                        <td>59</td>
+                                        <td>O+</td>
+                                        <td class="task">
+                                            <a href="#">Record Vitals</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">View</a>
+                                            <span class="message">1 <img src="../../images/message.png" alt="message_icon"></span>
+                                            <span class="normal">Normal</span>
+                                            <span class="check">Check</span>
+                                            <form action="" class="form_delete">
+                                                <input type="text" value="1" hidden>
+                                                <button type="submit"><img src="../../images/delete.png" alt=""></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h6>Copyright &copy;, SPMS </h6>
+    </footer>
+    <script src="./nurse.js"></script>
+</body>
+</html>

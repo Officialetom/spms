@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse - View Detail</title>
+    <link rel="stylesheet" href="./nurse.css">
+</head>
+<body>
+    <!-- navbar section starts here -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand-name">
+                <i class="toggle_btn" id="toggle_btn">
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </i>
+                <a href="../" class="gone">STROKE PATIENT MONITORING SYSTEM</a>
+            </div>
+            <nav class="nav-link">
+                <span id="user"><img src="../../images/user_icon.png" alt=""> Hello, Ubana<img src="../../images/arrow_down.png" class="rotate" id="arrow_down" alt=""></span>
+                <div class="log-links" id="log_links">
+                    <a href="#">Reset Password</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- main content for html animation -->
+    <div class="main-content">
+        <div class="dashboard">
+            <div class="dashboard-item" id="dashboard-item">
+                <div class="dash-section">
+                    <img src="../../images/favicon.png" alt="medicine_logo">
+                    <p>NURSE DASHBOARD</p>
+                </div>
+                <div class="dash-section">
+                    <ul>
+                        <li><a href="../"><img src="../../images/dashboard.png" alt="">Dashboard</a></li>
+                        <li class="dash-inner" id="dash-inner"><span id="patient"><img src="../../images/patient.png" alt="">Patients</span>
+                            <ul>
+                                <li><a href="./"><img src="../../images/patient add.png" alt="">Add Patients</a></li>
+                                <li><a href="../viewPatient/"><img src="../../images/medical-chechup.png" alt="">View Patients</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="close_btn" id="close_btn">Close</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard-item-second">
+                <div class="dash-notification">
+                    <h5>Notification: <span>4</span></h5>
+                </div>
+                <div class="dash-container">
+                    <div class="dash-box">
+                        <span class="box-name">
+                            <h5>Name: Testing Name</h5>
+                            <h5>Blood Type: O+</h5>
+                        </span>
+                        <span class="box-vitals">
+                            <h5>Temperature: <span class="danger">High (98)</span></h5>
+                            <h5>Blood Glucose: <span class="success">Normal (67)</span></h5>
+                            <h5>Oxygen Saturation: <span class="success">Normal (67)</span></h5>
+                            <h5>Blood Pressure: <span class="success">Normal (67)</span></h5>
+                        </span>
+                    </div>
+                    <div class="dash-box">
+                        <a href="../bloodPressure/" class="bp">Blood Pressure</a>
+                        <a href="../temperature/" class="temp">Temperature</a>
+                        <a href="../oxygenSat/" class="oxy">Oxygen Saturation</a>
+                        <a href="../bloodGlucose" class="bglu">Blood Glucose</a>
+                    </div>
+                    <div class="dash-box">
+                        <h4>Message Doctor:</h4>
+                        <div class="message_area">
+                            <div class="message_box">
+                                <div class="doc_msg">
+                                    <h6 style="color: yellow;">Doctor - <span>11:30am</span></h6>
+                                    <h5>Doing great!</h5>
+                                </div>
+                                <div class="nur_msg">
+                                    <h6 style="color: yellow;">Patient 5 - <span>11:45am</span></h6>
+                                    <h5>Thank you!</h5>
+                                </div>
+                            </div>
+                            <div class="send_box">
+                                <form action="" class="form_send_box">
+                                    <input type="text" name="send_msg" id="" placeholder="Type here">
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h6>Copyright &copy;, SPMS </h6>
+    </footer>
+    <script src="./nurse.js"></script>
+</body>
+</html>

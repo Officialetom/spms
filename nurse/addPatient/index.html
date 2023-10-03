@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse - Add</title>
+    <link rel="stylesheet" href="./nurse.css">
+</head>
+<body>
+    <!-- navbar section starts here -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand-name">
+                <i class="toggle_btn" id="toggle_btn">
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </i>
+                <a href="../" class="gone">STROKE PATIENT MONITORING SYSTEM</a>
+            </div>
+            <nav class="nav-link">
+                <span id="user"><img src="../../images/user_icon.png" alt=""> Hello, Ubana<img src="../../images/arrow_down.png" class="rotate" id="arrow_down" alt=""></span>
+                <div class="log-links" id="log_links">
+                    <a href="#">Reset Password</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- main content for html animation -->
+    <div class="main-content">
+        <div class="dashboard">
+            <div class="dashboard-item" id="dashboard-item">
+                <div class="dash-section">
+                    <img src="../../images/favicon.png" alt="medicine_logo">
+                    <p>NURSE DASHBOARD</p>
+                </div>
+                <div class="dash-section">
+                    <ul>
+                        <li><a href="../"><img src="../../images/dashboard.png" alt="">Dashboard</a></li>
+                        <li class="dash-inner" id="dash-inner"><span id="patient"><img src="../../images/patient.png" alt="">Patients</span>
+                            <ul>
+                                <li><a href="./"><img src="../../images/patient add.png" alt="">Add Patients</a></li>
+                                <li><a href="../viewPatient/"><img src="../../images/medical-chechup.png" alt="">View Patients</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="close_btn" id="close_btn">Close</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard-item-second">
+                <div class="dash-notification">
+                    <h5>Notification: <span>4</span></h5>
+                </div>
+                <div class="dash-container">
+                    <div class="dash-box">
+                        <h4>Add Patient <img src="../../images/patient add.png" alt=""></h4>
+                        <form action="" class="add_form">
+                            <input type="text" name="p_name" id="" placeholder="Name" inputmode="kana-name">
+                            <input type="text" name="p_age" id="" placeholder="Age" inputmode="numeric">
+                            <select name="p_sex" id="">
+                                <option value="" hidden>Sex</option>
+                                <option value="M" >Male</option>
+                                <option value="F" >Female</option>
+                            </select>
+                            <input type="text" name="p_blood" id="" placeholder="Blood Group" inputmode="kana-name">
+                            <button type="submit">Add patient</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h6>Copyright &copy;, SPMS </h6>
+    </footer>
+    <script src="./nurse.js"></script>
+</body>
+</html>

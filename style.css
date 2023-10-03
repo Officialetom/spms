@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.navbar
+{
+    box-shadow: 1px 3px 6px #f1f1f1,
+                -1px -3px 6px #f1f1f1;
+}
+
+.navbar-container
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.brand-name img
+{
+    width: 50px;
+}
+
+.navbar-container a
+{
+    text-decoration: none;
+    color: #788E9E;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.brand-name
+{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px)
+{
+    .navbar-container
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 467px)
+{
+    .brand-name .gone
+    {
+        display: none;
+    }
+
+    .nav-link a
+    {
+        font-size: 13px;
+    }
+}
+/* banner section */
+.banner
+{
+    background: linear-gradient(to right, rgba(33, 123, 191, .2), rgba(33, 123, 191, .5)), url("./images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 135px 0;
+}
+
+.banner-container
+{
+    max-width: 1100px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.banner-item h2
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.banner-item h2 span
+{
+    color: #217BBF;
+}
+
+.banner-item p
+{
+    color: #fff;
+}
+
+.banner-item a
+{
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    background-color: #217BBF;
+    padding: 8px 10px;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.banner-item-form
+{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow: hidden;
+}
+
+.btn-up
+{
+    display: flex;
+}
+
+.btn-active,
+.btn-other
+{
+    padding: 20px 10px;
+    text-align: center;
+    /* background-color: #217BBF; */
+    width: 50%;
+    cursor: pointer;
+}
+
+.hidden
+{
+    background-color: #F5F5F5;
+    border-bottom: 2px solid #217BBF;
+    color: #788E9E;
+}
+
+.form
+{
+    /* padding: 0 45px; */
+    margin-bottom: 35px;
+    width: 85%;
+    margin: auto;
+}
+
+.form-control h3
+{
+    text-align: center;
+    color: #217BBF;
+    margin: 10px 0;
+}
+
+.form-control a
+{
+    font-size: 13px;
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.form-control form
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.form input
+{
+    padding: 10px 5px;
+    border: 1px solid #C5C3C3;
+    border-radius: 10px;
+}
+
+.form input:focus
+{
+    outline: none;
+}
+
+.form button
+{
+    background-color: #217BBF;
+    width: fit-content;
+    padding: 8px 35px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 900px)
+{       
+    .banner
+    {
+        padding: 105px 0;
+    }
+
+    .banner-container
+    {
+        grid-template-columns: 1fr 1.5fr;
+        width: 90%;
+    }
+
+    .banner-item h2
+    {
+        font-size: 25px;
+    }
+
+    .banner-item p
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 700px)
+{
+
+    .banner
+    {
+        padding: 65px 0;
+    }
+
+    .banner-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .banner-item p, .banner-item a
+    {
+        display: none;
+    }
+}
+
+/* about section */
+.about
+{
+    padding: 65px 0;
+}
+
+.about-container
+{
+    max-width: 1100px;
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-item img
+{
+    width: 100%;
+}
+
+.about-item h2
+{
+    color: #217BBF;
+    margin-bottom: 15px;
+}
+
+.about-item p
+{
+    font-size: 15px;
+    line-height: 35px;
+}
+
+@media (max-width: 900px) 
+{
+    .about-container
+    {
+        width: 80%;
+    }    
+}
+
+@media (max-width: 667px)
+{
+    .about-container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer
+{
+    background-color: #272727;
+    color: #788E9E;
+    text-align: center;
+    padding: 10px 0;
+}
